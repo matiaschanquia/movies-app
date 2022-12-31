@@ -1,3 +1,8 @@
+# Sobre la app
+
+Esta aplicación web permite buscar películas por titulo (en su lenguaje original) y agregar a favoritos. Tambien permite deshacer el favorito desde la misma búsqueda o desde la ruta Favoritos. Haciendo click en el título de la película permite ver más información sobre la misma.
+Aplique mis conocimientos de HTML, CSS, Javascript, React y Redux.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
