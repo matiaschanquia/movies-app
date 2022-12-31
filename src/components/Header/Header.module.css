@@ -28,11 +28,11 @@
 
 .nav span {
     font-weight: 600;
+    color: #000;
 }
 
 .linkActive span {
     text-decoration: underline;
-    color: #000;
 }
 
 @media (max-width: 650px) {
