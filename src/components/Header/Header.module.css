@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    width: 50px;
+}
+
+.nav > ul {
+    display: flex;
+    gap: 10px;
+}
+
+.nav span {
+    font-weight: 600;
+}
+
+.linkActive span {
+    text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+    .header {
+        flex-direction: column;
+    }
+}

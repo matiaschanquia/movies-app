@@ -1,0 +1,14 @@
+.containerFavs  {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto 20px;
+    gap: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.sinFavs {
+    background-color: whitesmoke;
+    border-radius: 6px;
+    padding: 6px 8px;
+}

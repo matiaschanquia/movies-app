@@ -1,0 +1,57 @@
+.containerDetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto 20px;
+}
+
+.containerDetail > figure {
+    width: 65%;
+}
+
+.containerDetail > figure > img {
+    width: 100%;
+}
+
+.infoDetail {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.loadingDetail {
+    animation: normal infinite girar 5s;
+    animation-timing-function: linear;
+    width: 60px;
+}
+
+.loadingDetail::selection {
+    background-color: transparent;
+}
+
+@keyframes girar {
+    to {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(-360deg);
+    }
+}
+
+@media (max-width: 700px) {
+    .containerDetail {
+        flex-direction: column;
+    }
+    .containerDetail > figure {
+        order: 99;
+        width: 70%;
+    }    
+}
