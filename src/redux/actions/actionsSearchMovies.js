@@ -27,6 +27,7 @@ const fetchMovies = (nameMovie) => {
             .then(response => response.json())
             .then(data => {
                 if(!data.results || data.results.length === 0) {
+                    alert("No se ha encontrado películas con ese título")
                     dispatch(fetchMoviesFailure("No se ha encontrado películas con ese título"));
                 } else {
                     dispatch(fetchMoviesSuccess(data.results))

@@ -5,12 +5,10 @@ import Movie from "../Movie/Movie";
 import style from "./Search.module.css";
 
 function Search(props) {
-    const [sinBusqueda, setSinBusqueda] = useState(true);
     const [title, setTitle] = useState("");
 
     const submitHandler = (e) => {
         e.preventDefault();
-        setSinBusqueda(false);
         let nameMovie = title.trim();
         nameMovie = nameMovie.replace(/ /g, "+");
         props.fetchMovies(nameMovie);
@@ -27,7 +25,7 @@ function Search(props) {
             }
             <div className={style.containerMovies}>
                 {
-                    sinBusqueda ? 
+                    props.searchMovies.movies.length === 0 ? 
                     <h3 className={style.titleSinBusqueda}>Realice una búsqueda de películas.</h3> :
                         props.searchMovies.error ?
                         <h3 className={style.titleSinBusqueda}>{props.searchMovies.error}</h3> :
