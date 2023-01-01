@@ -38,11 +38,11 @@ function Movie(props) {
     return (
         <div className={style.containerMovie}>
             {isFav ? (
-                <button className={style.botonFav} onClick={handleFavorite}>
+                <button className={style.botonFav} onClick={handleFavorite} title="Quitar de favoritos">
                     ❤️
                 </button>
             ) : (
-                <button className={style.botonFav} onClick={handleFavorite}>
+                <button className={style.botonFav} onClick={handleFavorite} title="Añadir a favoritos">
                     🤍
                 </button>
             )}
